@@ -86,6 +86,9 @@ public abstract class AnnotationInjectedBeanPostProcessor<A extends Annotation, 
     public AnnotationInjectedBeanPostProcessor() {
         this.annotationType = resolveGenericType(getClass());
     }
+	
+	
+	
 
     private static <T> Collection<T> combine(Collection<? extends T>... elements) {
         List<T> allElements = new ArrayList<T>();
